@@ -1,0 +1,179 @@
+#encabezado{
+    background:#4b0082;
+    height: 240px;
+    text-align: center;
+    background-image: url("../img/logo.png");
+    background-repeat:no-repeat;
+    background-size: 2200px 200px;
+}
+
+.piePagina{
+    width: 100%; /*ancho*/
+    height: 100px; /*alto*/
+    background:#4b0082; /*Color de fondo*/
+    color: white; /*Color de la letra dentro de la clase*/
+    bottom: 0; /*Espacio de separación parte inferior*/
+    position: fixed;
+    left: 0; /*Alineación de contenidos a la izquierda*/
+
+}
+
+#menu{ /*identificador*/
+    height: 40px;
+    position: relative;
+    top: 200px;
+}
+
+#datos {
+    width: 80%;
+    background-color: #008f39;
+    height: 600px;
+    margin: auto;
+    opacity: 1;
+    color:#FFFFFF;
+    padding: 10px;
+    font-facily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#333333;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color:#111111;
+}
+
+*{
+     margin: 0;
+     padding: 0;
+}
+body{
+    background-color: #00ff00;
+}
+
+<html>
+	<head>
+		<title>Menu Desplegable</title>
+		<style type="text/css"> /*Código CCS*/
+			
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:1200px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+		</style><!--Termina código CSS-->
+	</head>
+	<body>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="">Acerca de</a>
+					<ul>
+						<li><a href="historia.html">Antecedentes</a></li>
+						<li><a href="comites.html">Comites</a></li>
+                                                <li><a href="creacion de la variedad.html">Creacion de la variedad</a></li>
+					</ul>
+				</li>
+                                <li><a href="">Misión</a>
+                                        <ul>
+                                                <li><a href="meta.html">Meta Principal</a></li>
+                                                <li><a href="visión.html">Visión Principal</a>
+                                        </ul>
+                                </li>
+                                <li><a href="">Programas</a>
+                                        <ul>
+                                                <li><a href="apoyo técnico.html">Apoyo Técnico</a></li>
+                                                <li><a href="apoyo financiero.html">Apoyo Financiero</a></li>
+                                                <li><a href="representación legal.html>Representación Legal</a></li>
+                                        </ul>
+				</li>
+                                <li><a href="">Acerca de</a>
+					<ul>
+						<li><a href="historia.html">Antecedentes</a></li>
+						<li><a href="comites.html">Comites</a></li>
+                                                <li><a href="creacion de la variedad.html">Creacion de la variedad</a></li>
+					</ul>
+				</li>
+                                <li><a href="">Donación</a>
+                                        <ul>
+                                                <li><a href="apoyanos.html">¡Apoyanos!</a></li>
+                                        </ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
+
+.areaPrincipal{ /*Así se define una clase*/
+    background-image: url("../img/fondo.png); /* agregar fondo de imagen al div*/
+    background-repeat: no-repeat; /*permitir o no que se repita una imagen*/
+    width: 100%;
+    height: auto;
+    opacity: 0.7; /*Opacidad de la imagen*/
+    -webkit-background-size: 100% 100%;
+    /* Safari 3.0 */
+    -moz-background-size: 100% 100%
+    /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100% 100%;
+    /* Opera 9.5 */
+    background-size: 100% 100%;
+    /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+}
